@@ -24,3 +24,17 @@ jobs:
           test -f "второй-файл.txt"
           test -f ".gitignore"
           echo "Все основные файлы найдены"
+
+  secret-scan:
+    name: secret-scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Получить историю проекта
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Проверить проект на секреты
+        uses: trufflesecurity/trufflehog@main
+        with:
+          extra_args: --results=verified,unknown

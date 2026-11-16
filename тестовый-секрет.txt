@@ -1,0 +1,2 @@
+# Проверка TruffleHog
+TEST_KEY_ID=ASDFGHJ4MN6BVCDRT
