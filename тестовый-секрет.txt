@@ -1,2 +1,0 @@
-# Проверка TruffleHog
-LAB_DEMO_PATTERN=classroom-example-only-not-a-real-credential
